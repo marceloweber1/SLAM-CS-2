@@ -1,4 +1,4 @@
-﻿Imports NAudio 'Modified Version which does not write "extraSize"
+Imports NAudio 'Modified Version which does not write "extraSize"
 Imports NAudio.Wave
 Imports System.IO
 Imports System.Text.RegularExpressions
@@ -40,6 +40,18 @@ Public Class Form1
         csgo.ToCfg = "csgo\cfg\"
         csgo.libraryname = "csgo\"
         csgo.exename = "csgo"
+        csgo.samplerate = 22050
+        csgo.blacklist.AddRange({"attack", "attack2", "autobuy", "back", "buy", "buyammo1", "buyammo2", "buymenu", "callvote", "cancelselect", "cheer", "compliment", "coverme", "drop", "duck", "enemydown", "enemyspot", "fallback", "followme", "forward", "getout", "go", "holdpos", "inposition", "invnext", "invprev", "jump", "lastinv", "messagemode", "messagemode2", "moveleft", "moveright", "mute", "negative", "quit", "radio1", "radio2", "radio3", "rebuy", "regroup", "reload", "report", "reportingin", "roger", "sectorclear", "showscores", "slot1", "slot10", "slot2", "slot3", "slot4", "slot5", "slot6", "slot7", "slot8", "slot9", "speed", "sticktog", "takepoint", "takingfire", "teammenu", "thanks", "toggleconsole", "use", "voicerecord"})
+        csgo.VoiceFadeOut = False
+        Games.Add(csgo)
+
+        Dim csgo As New SourceGame
+        csgo.name = "Counter-Strike 2"
+        csgo.id = 730
+        csgo.directory = "common\Counter-Strike Global Offensive\"
+        csgo.ToCfg = "csgo\cfg\"
+        csgo.libraryname = "csgo\"
+        csgo.exename = "cs2"
         csgo.samplerate = 22050
         csgo.blacklist.AddRange({"attack", "attack2", "autobuy", "back", "buy", "buyammo1", "buyammo2", "buymenu", "callvote", "cancelselect", "cheer", "compliment", "coverme", "drop", "duck", "enemydown", "enemyspot", "fallback", "followme", "forward", "getout", "go", "holdpos", "inposition", "invnext", "invprev", "jump", "lastinv", "messagemode", "messagemode2", "moveleft", "moveright", "mute", "negative", "quit", "radio1", "radio2", "radio3", "rebuy", "regroup", "reload", "report", "reportingin", "roger", "sectorclear", "showscores", "slot1", "slot10", "slot2", "slot3", "slot4", "slot5", "slot6", "slot7", "slot8", "slot9", "speed", "sticktog", "takepoint", "takingfire", "teammenu", "thanks", "toggleconsole", "use", "voicerecord"})
         csgo.VoiceFadeOut = False
